@@ -1,5 +1,3 @@
-
-
 /*SECTION - Document version
 document.getElementById("bookingForm").addEventListener("submit", function (event) {
     event.preventDefault();
