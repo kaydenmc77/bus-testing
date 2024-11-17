@@ -1,4 +1,6 @@
-document.getElementById("bookingForm").addEventListener("submit", function(event) {
+document
+  .getElementById("bookingForm")
+  .addEventListener("submit", function (event) {
     event.preventDefault();
 
     // Get form values
@@ -11,15 +13,18 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
 
     // Validation
     if (name && destination && seats > 0) {
-        // Calculate fare
-        const totalFare = seats * pricePerSeat;
+      // Calculate fare
+      const totalFare = seats * pricePerSeat;
 
-        // Display confirmation message
-        document.getElementById("message").innerText = 
-            `Booking confirmed for ${name} to ${destination}. Seats: ${seats}. Total fare: $${totalFare}.`;
+      // Display confirmation message
+      document.getElementById(
+        "message"
+      ).innerText = `Booking confirmed for ${name} to ${destination}. Seats: ${seats}. Total fare: $${totalFare}.`;
     } else {
-        // Display error message if inputs are invalid
-        document.getElementById("message").innerText = 
-            "Please fill in all fields correctly.";
+      // Display error message if inputs are invalid
+      document.getElementById("message").innerText =
+        "Please fill in all fields correctly.";
     }
-});
+  });
+
+// Test
