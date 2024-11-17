@@ -1,4 +1,4 @@
-// Test for pull request
+// Test for pull request - Number 2
 
 function validateForm(username, destination, seats, pricePerSeat) {
   // Validation
