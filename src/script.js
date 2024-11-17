@@ -3,7 +3,6 @@ function validateForm(username, destination, seats, pricePerSeat) {
   if (username && destination && seats > 0) {
     // Calculate fare
     const totalFare = seats * pricePerSeat;
-
     return totalFare;
   } else {
     return "Error";
