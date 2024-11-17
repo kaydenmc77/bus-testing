@@ -1,3 +1,5 @@
+// Test for pull request - Number 2
+
 function validateForm(username, destination, seats, pricePerSeat) {
   // Validation
   if (username && destination && seats > 0) {
